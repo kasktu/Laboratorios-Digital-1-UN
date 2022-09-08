@@ -1,0 +1,50 @@
+|seleccionador
+S[0] => Multiplexor:mux.S[0]
+S[0] => Demultiplexor:demux.S[0]
+S[1] => Multiplexor:mux.S[1]
+S[1] => Demultiplexor:demux.S[1]
+D[0] => Multiplexor:mux.D[0]
+D[1] => Multiplexor:mux.D[1]
+D[2] => Multiplexor:mux.D[2]
+D[3] => Multiplexor:mux.D[3]
+Z[0] << Demultiplexor:demux.Z[0]
+Z[1] << Demultiplexor:demux.Z[1]
+Z[2] << Demultiplexor:demux.Z[2]
+Z[3] << Demultiplexor:demux.Z[3]
+
+
+|seleccionador|Multiplexor:mux
+S[0] => Y2.IN0
+S[0] => Y3.IN0
+S[0] => Y0.IN0
+S[0] => Y1.IN0
+S[1] => Y1.IN1
+S[1] => Y3.IN1
+S[1] => Y0.IN1
+S[1] => Y2.IN1
+D[0] => Y0.IN1
+D[1] => Y1.IN1
+D[2] => Y2.IN1
+D[3] => Y3.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|seleccionador|Demultiplexor:demux
+S[0] => Equal0.IN3
+S[0] => Equal1.IN3
+S[0] => Equal2.IN3
+S[0] => Equal3.IN3
+S[1] => Equal0.IN2
+S[1] => Equal1.IN2
+S[1] => Equal2.IN2
+S[1] => Equal3.IN2
+Y => Z.DATAB
+Y => Z.DATAB
+Y => Z.DATAB
+Y => Z.DATAB
+Z[0] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+
+

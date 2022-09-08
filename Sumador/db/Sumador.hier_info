@@ -1,0 +1,26 @@
+|Sumador
+SR => Cout.IN0
+SR => Cout.IN0
+SR => Cout.IN0
+SR => Sout.IN1
+SR => Sout.IN1
+SR => Cout.IN1
+SR => Sout.IN1
+A[1] => Cout.IN1
+A[1] => Cout.IN1
+A[1] => Sout.IN1
+A[2] => Cout.IN1
+A[2] => Cout.IN1
+A[2] => Sout.IN1
+A[3] => Cout.IN1
+A[3] => Cout.IN1
+A[3] => Sout.IN1
+B[1] => Cout.IN1
+B[2] => Cout.IN1
+B[3] => Cout.IN1
+Sout[1] <= Sout.DB_MAX_OUTPUT_PORT_TYPE
+Sout[2] <= Sout.DB_MAX_OUTPUT_PORT_TYPE
+Sout[3] <= Sout.DB_MAX_OUTPUT_PORT_TYPE
+Sout[4] <= Sout.DB_MAX_OUTPUT_PORT_TYPE
+
+

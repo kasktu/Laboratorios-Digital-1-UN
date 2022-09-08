@@ -1,0 +1,55 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity  seleccionador is 
+    port(
+        S: in std_logic_vector(1 downto 0);
+        D: in std_logic_vector(3 downto 0);
+    
+        Z: out std_logic_vector(3 downto 0));
+
+end seleccionador;
+
+architecture seleccion of seleccionador is
+
+    component multiplexor
+        port(
+        
+            S: in std_logic_vector(1 downto 0);
+            D: in std_logic_vector(3 downto 0);
+        
+            Y : out std_logic);
+
+    end component;
+    
+    component demultiplexor 
+        port(
+        
+            S: in std_logic_vector(1 downto 0);
+            Y: in std_logic;
+        
+            Z: out std_logic_vector(3 downto 0));
+
+    end component;
+
+    signal union: std_logic;
+
+    begin 
+        mux : multiplexor 
+        port map
+        (
+            S => S,
+            D => D,
+            Y => union 
+        );
+        demux: demultiplexor 
+        port map
+        (
+            S => S,
+            Y => union,
+            Z => Z
+        );
+
+end seleccion;

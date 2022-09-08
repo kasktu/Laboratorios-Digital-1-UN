@@ -1,0 +1,74 @@
+|comparador_4_bit
+A[0] => mayorMenorByBit:mayorMenor.A[0]
+A[1] => mayorMenorByBit:mayorMenor.A[1]
+A[2] => mayorMenorByBit:mayorMenor.A[2]
+A[3] => mayorMenorByBit:mayorMenor.A[3]
+B[0] => mayorMenorByBit:mayorMenor.B[0]
+B[1] => mayorMenorByBit:mayorMenor.B[1]
+B[2] => mayorMenorByBit:mayorMenor.B[2]
+B[3] => mayorMenorByBit:mayorMenor.B[3]
+A_Mayor << A_Mayor.DB_MAX_OUTPUT_PORT_TYPE
+Iguales << mayorMenorByBit:mayorMenor.X[6]
+B_Mayor << B_Mayor.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparador_4_bit|mayorMenorByBit:mayorMenor
+A[0] => comparador_bit:bit4.A
+A[1] => comparador_bit:bit3.A
+A[2] => comparador_bit:bit2.A
+A[3] => comparador_bit:bit1.A
+B[0] => comparador_bit:bit4.B
+B[1] => comparador_bit:bit3.B
+B[2] => comparador_bit:bit2.B
+B[3] => comparador_bit:bit1.B
+X[0] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[1] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[2] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[3] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[4] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[5] <= X.DB_MAX_OUTPUT_PORT_TYPE
+X[6] <= X.DB_MAX_OUTPUT_PORT_TYPE
+S[0] <= comparador_bit:bit1.S[0]
+S[1] <= comparador_bit:bit1.S[2]
+
+
+|comparador_4_bit|mayorMenorByBit:mayorMenor|comparador_bit:bit1
+A => Y1.IN0
+A => Y0.IN0
+B => Y0.IN1
+B => Y1.IN1
+S[0] <= Y0.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= Y2.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparador_4_bit|mayorMenorByBit:mayorMenor|comparador_bit:bit2
+A => Y1.IN0
+A => Y0.IN0
+B => Y0.IN1
+B => Y1.IN1
+S[0] <= Y0.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= Y2.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparador_4_bit|mayorMenorByBit:mayorMenor|comparador_bit:bit3
+A => Y1.IN0
+A => Y0.IN0
+B => Y0.IN1
+B => Y1.IN1
+S[0] <= Y0.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= Y2.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|comparador_4_bit|mayorMenorByBit:mayorMenor|comparador_bit:bit4
+A => Y1.IN0
+A => Y0.IN0
+B => Y0.IN1
+B => Y1.IN1
+S[0] <= Y0.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= Y2.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= Y1.DB_MAX_OUTPUT_PORT_TYPE
+
+

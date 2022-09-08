@@ -1,0 +1,10 @@
+|Multiplexor
+S[0] => Mux0.IN1
+S[1] => Mux0.IN0
+D[0] => Mux0.IN5
+D[1] => Mux0.IN4
+D[2] => Mux0.IN3
+D[3] => Mux0.IN2
+Y <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

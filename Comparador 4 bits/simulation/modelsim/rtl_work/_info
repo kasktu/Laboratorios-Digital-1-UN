@@ -1,0 +1,146 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/20.1/proyects/Laboratorios/Comparador 4 bits/simulation/modelsim
+Ecomparador_4_bit
+Z1 w1662263419
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z6 8C:/intelFPGA_lite/20.1/proyects/Laboratorios/Comparador 4 bits/comparador_4_bit.vhd
+Z7 FC:/intelFPGA_lite/20.1/proyects/Laboratorios/Comparador 4 bits/comparador_4_bit.vhd
+l0
+L13 1
+VC7NcHU8iTochZ;fZ9zRlJ3
+!s100 :VoMF3PkTfK47[WE7KJW92
+Z8 OV;C;2020.1;71
+31
+Z9 !s110 1662655303
+!i10b 1
+Z10 !s108 1662655302.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/20.1/proyects/Laboratorios/Comparador 4 bits/comparador_4_bit.vhd|
+Z12 !s107 C:/intelFPGA_lite/20.1/proyects/Laboratorios/Comparador 4 bits/comparador_4_bit.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Acomparar
+R2
+R3
+R4
+R5
+DEx4 work 16 comparador_4_bit 0 22 C7NcHU8iTochZ;fZ9zRlJ3
+!i122 0
+l52
+L28 42
+VbiG6S6Q9Y:O;zGiRTGCNP1
+!s100 BC0efJe0zeEC^BkddTfT53
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ecomparador_bit
+Z15 w1662168077
+R2
+R3
+R4
+R5
+!i122 1
+R0
+Z16 8C:/intelFPGA_lite/20.1/proyects/Laboratorios/Comparador 4 bits/comparador_bit.vhd
+Z17 FC:/intelFPGA_lite/20.1/proyects/Laboratorios/Comparador 4 bits/comparador_bit.vhd
+l0
+L6 1
+VTG5E0iU]i_FW93:@Uo;_60
+!s100 LTgTDLUG]QK62FKOoe>7Y1
+R8
+31
+R9
+!i10b 1
+Z18 !s108 1662655303.000000
+Z19 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/20.1/proyects/Laboratorios/Comparador 4 bits/comparador_bit.vhd|
+Z20 !s107 C:/intelFPGA_lite/20.1/proyects/Laboratorios/Comparador 4 bits/comparador_bit.vhd|
+!i113 1
+R13
+R14
+Acomparar
+R2
+R3
+R4
+R5
+DEx4 work 14 comparador_bit 0 22 TG5E0iU]i_FW93:@Uo;_60
+!i122 1
+l20
+L18 13
+VCg3zjP:<EeEL:eYh9BIRJ3
+!s100 0W9SY@4:1CU`mM?:n0`Z;1
+R8
+31
+R9
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R13
+R14
+Emayormenorbybit
+Z21 w1662263377
+R2
+R3
+R4
+R5
+!i122 2
+R0
+Z22 8C:/intelFPGA_lite/20.1/proyects/Laboratorios/Comparador 4 bits/mayorMenorByBit.vhd
+Z23 FC:/intelFPGA_lite/20.1/proyects/Laboratorios/Comparador 4 bits/mayorMenorByBit.vhd
+l0
+L6 1
+VaHAjoMJHdJ<EVdAFO5nfY3
+!s100 dMF9I2USfje[iXVOljkMz0
+R8
+31
+R9
+!i10b 1
+R18
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/20.1/proyects/Laboratorios/Comparador 4 bits/mayorMenorByBit.vhd|
+!s107 C:/intelFPGA_lite/20.1/proyects/Laboratorios/Comparador 4 bits/mayorMenorByBit.vhd|
+!i113 1
+R13
+R14
+Amayormenorigual4bit
+R2
+R3
+R4
+R5
+DEx4 work 15 mayormenorbybit 0 22 aHAjoMJHdJ<EVdAFO5nfY3
+!i122 2
+l28
+L15 57
+VV_BQ5bk^GHjooSn9ejMTl1
+!s100 TYaGLO69<lNliceXio<`I3
+R8
+31
+R9
+!i10b 1
+R18
+R24
+Z25 !s107 C:/intelFPGA_lite/20.1/proyects/Laboratorios/Comparador 4 bits/mayorMenorByBit.vhd|
+!i113 1
+R13
+R14

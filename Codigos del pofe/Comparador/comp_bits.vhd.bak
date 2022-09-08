@@ -1,0 +1,32 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+
+-- Para crear un comentario 
+
+entity comp_bits is
+
+	port(
+		-- Input ports
+		A: in  std_logic;
+		B: in	 std_logic;
+
+		-- Output ports
+		C:	out std_logic;
+		D:	out std_logic;
+		E:	out std_logic);
+		
+end comp_bits;
+
+
+architecture comparar of comp_bits is
+	
+begin
+
+	C <= A xnor B;
+	D <= A and not B;
+	E <= not A and B;
+
+end comparar;

@@ -1,0 +1,32 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity comparador_bit is
+
+    port(
+        A: in std_logic; -- señal del bit de la señal A
+        B: in std_logic; -- señal del bit de la señal B
+        -- entrada de los bits anteriores en caso de que sean iguales
+        D: in std_logic_vector(2 downto 0);
+        -- salida de la comparativa para encender los leds
+        S: out std_logic_vector(2 downto 0));
+    
+
+end comparador_bit;
+
+architecture comparar of comparador_bit is
+
+    signal C0,C1,C2 :std_logic;
+begin
+    -- señales internas de la comparativa del bit para la logica
+    C0 <= not A and B;
+    C1 <= not (C0 or C1)
+    C2 <= A and not B;
+    -- señales externas para la comparativa de los siguientes bits
+    S(0) <= D(0) and D(1) and D(2) and C0 ;
+    S(1) <= D(0) and D(1) and D(2) and C1;
+    S(2) <= D(0) and D(1) and D(2) and C2;
+
+end comparar ; 
