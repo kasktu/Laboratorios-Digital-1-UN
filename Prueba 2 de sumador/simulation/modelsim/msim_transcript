@@ -1,0 +1,66 @@
+# Reading pref.tcl
+# do sumadoRestador_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/intelFPGA_lite/20.1/proyects/Laboratorios/Prueba 2 de sumador/sumadoRestador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:42:27 on Sep 12,2022
+# vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/20.1/proyects/Laboratorios/Prueba 2 de sumador/sumadoRestador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sumadoRestador
+# -- Compiling architecture suma of sumadoRestador
+# ** Error: C:/intelFPGA_lite/20.1/proyects/Laboratorios/Prueba 2 de sumador/sumadoRestador.vhd(47): (vcom-1436) Actual expression (infix expression) of formal "B" is not globally static.
+# ** Error: C:/intelFPGA_lite/20.1/proyects/Laboratorios/Prueba 2 de sumador/sumadoRestador.vhd(57): (vcom-1436) Actual expression (infix expression) of formal "B" is not globally static.
+# ** Error: C:/intelFPGA_lite/20.1/proyects/Laboratorios/Prueba 2 de sumador/sumadoRestador.vhd(67): (vcom-1436) Actual expression (infix expression) of formal "B" is not globally static.
+# ** Note: C:/intelFPGA_lite/20.1/proyects/Laboratorios/Prueba 2 de sumador/sumadoRestador.vhd(75): VHDL Compiler exiting
+# End time: 17:42:27 on Sep 12,2022, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./sumadoRestador_run_msim_rtl_vhdl.do line 8
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/intelFPGA_lite/20.1/proyects/Laboratorios/Prueba 2 de sumador/sumadoRestador.vhd}"
+vsim work.sumadorestador
+# vsim work.sumadorestador 
+# Start time: 17:42:30 on Sep 12,2022
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'C:/intelFPGA_lite/20.1/proyects/Laboratorios/Prueba 2 de sumador/simulation/modelsim/rtl_work.sumadorestador' has no architecture.
+# Error loading design
+# End time: 17:42:31 on Sep 12,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim work.sumadorestador
+# vsim work.sumadorestador 
+# Start time: 17:42:31 on Sep 12,2022
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'C:/intelFPGA_lite/20.1/proyects/Laboratorios/Prueba 2 de sumador/simulation/modelsim/rtl_work.sumadorestador' has no architecture.
+# Error loading design
+# End time: 17:42:31 on Sep 12,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vsim work.sumadorestador
+# vsim work.sumadorestador 
+# Start time: 17:42:31 on Sep 12,2022
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'C:/intelFPGA_lite/20.1/proyects/Laboratorios/Prueba 2 de sumador/simulation/modelsim/rtl_work.sumadorestador' has no architecture.
+# Error loading design
+vsim work.sumadorestador
+# End time: 17:42:36 on Sep 12,2022, Elapsed time: 0:00:05
+# Errors: 1, Warnings: 0
+# vsim work.sumadorestador 
+# Start time: 17:42:36 on Sep 12,2022
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'C:/intelFPGA_lite/20.1/proyects/Laboratorios/Prueba 2 de sumador/simulation/modelsim/rtl_work.sumadorestador' has no architecture.
+# Error loading design
+# End time: 17:42:36 on Sep 12,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

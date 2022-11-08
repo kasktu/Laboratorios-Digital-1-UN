@@ -1,0 +1,57 @@
+|sumadoRestador
+A[0] => SumadorCompleto:comp0_SumadorCompleto.A
+A[1] => SumadorCompleto:comp1_SumadorCompleto.A
+A[2] => SumadorCompleto:comp2_SumadorCompleto.A
+B[0] => ~NO_FANOUT~
+B[1] => comb.IN0
+B[2] => comb.IN0
+B[2] => comb.IN0
+Sel => comb.IN1
+Sel => comb.IN1
+Sel => comb.IN1
+Sel => SumadorCompleto:comp0_SumadorCompleto.C_in
+C_out <= SumadorCompleto:comp2_SumadorCompleto.C_out
+S[0] <= SumadorCompleto:comp0_SumadorCompleto.S
+S[1] <= SumadorCompleto:comp1_SumadorCompleto.S
+S[2] <= SumadorCompleto:comp2_SumadorCompleto.S
+
+
+|sumadoRestador|SumadorCompleto:comp0_SumadorCompleto
+A => C_out.IN0
+A => C_out.IN0
+A => S.IN1
+B => C_out.IN1
+B => C_out.IN1
+B => S.IN0
+C_in => C_out.IN1
+C_in => S.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumadoRestador|SumadorCompleto:comp1_SumadorCompleto
+A => C_out.IN0
+A => C_out.IN0
+A => S.IN1
+B => C_out.IN1
+B => C_out.IN1
+B => S.IN0
+C_in => C_out.IN1
+C_in => S.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumadoRestador|SumadorCompleto:comp2_SumadorCompleto
+A => C_out.IN0
+A => C_out.IN0
+A => S.IN1
+B => C_out.IN1
+B => C_out.IN1
+B => S.IN0
+C_in => C_out.IN1
+C_in => S.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+

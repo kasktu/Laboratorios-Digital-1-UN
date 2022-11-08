@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Multiplexor
-Fri Sep 02 10:32:01 2022
+Fri Oct 07 17:39:22 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 02 10:32:01 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri Oct 07 17:39:22 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Multiplexor                                 ;
 ; Top-level Entity Name              ; multiplexor                                 ;
@@ -196,7 +196,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
-; Maximum fan-out node                        ; S[1]~input ;
+; Maximum fan-out node                        ; S[0]~input ;
 ; Maximum fan-out                             ; 2          ;
 ; Total fan-out                               ; 16         ;
 ; Average fan-out                             ; 1.00       ;
@@ -258,7 +258,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Sep 02 10:31:48 2022
+    Info: Processing started: Fri Oct 07 17:39:13 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Multiplexor -c Multiplexor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -274,9 +274,9 @@ Info (21057): Implemented 9 device resources after synthesis - the final resourc
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 2 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4775 megabytes
-    Info: Processing ended: Fri Sep 02 10:32:01 2022
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:28
+    Info: Peak virtual memory: 4784 megabytes
+    Info: Processing ended: Fri Oct 07 17:39:22 2022
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:22
 
 

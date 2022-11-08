@@ -1,0 +1,18 @@
+|contador
+f1hz => cuenta[0].CLK
+f1hz => cuenta[1].CLK
+f1hz => cuenta[2].CLK
+f1hz => cuenta[3].CLK
+f1hz => cuenta[4].CLK
+f1hz => cuenta[5].CLK
+Reset => Equal0.IN0
+start => control.CLK
+stp => ~NO_FANOUT~
+Num[0] <= cuenta[0].DB_MAX_OUTPUT_PORT_TYPE
+Num[1] <= cuenta[1].DB_MAX_OUTPUT_PORT_TYPE
+Num[2] <= cuenta[2].DB_MAX_OUTPUT_PORT_TYPE
+Num[3] <= cuenta[3].DB_MAX_OUTPUT_PORT_TYPE
+Num[4] <= cuenta[4].DB_MAX_OUTPUT_PORT_TYPE
+Num[5] <= cuenta[5].DB_MAX_OUTPUT_PORT_TYPE
+
+

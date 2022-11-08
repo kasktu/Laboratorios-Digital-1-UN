@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Num[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Num[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Num[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Num[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Num[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Num[5]",
+					"strict" : false
+				},
+				{
+					"name" : "f1hz",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

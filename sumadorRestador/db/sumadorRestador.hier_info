@@ -1,0 +1,80 @@
+|sumadorRestador
+A[0] => medioSumador:bit0.A
+A[0] => sumadorRestador1Bit:bit1.A
+A[0] => sumadorRestador1Bit:bit2.A
+A[1] => ~NO_FANOUT~
+A[2] => ~NO_FANOUT~
+B[0] => medioSumador:bit0.B
+B[0] => sumadorRestador1Bit:bit1.B
+B[0] => sumadorRestador1Bit:bit2.B
+B[1] => ~NO_FANOUT~
+B[2] => ~NO_FANOUT~
+X => sumadorRestador1Bit:bit1.O
+X => sumadorRestador1Bit:bit2.O
+C1 <= sumadorRestador1Bit:bit2.C_out
+S[0] <= medioSumador:bit0.S
+S[1] <= sumadorRestador1Bit:bit1.S
+S[2] <= sumadorRestador1Bit:bit2.S
+
+
+|sumadorRestador|medioSumador:bit0
+A => S.IN0
+A => C_out.IN0
+B => S.IN1
+B => C_out.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumadorRestador|sumadorRestador1Bit:bit1
+A => S.IN1
+A => S.IN0
+A => C_out.IN0
+A => C_out.IN0
+A => C_out.IN0
+A => C_out.IN0
+B => S.IN0
+B => C_out.IN1
+B => C_out.IN1
+B => C_out.IN0
+B => C_out.IN1
+B => S.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+C_in => C_out.IN1
+C_in => C_out.IN1
+C_in => C_out.IN1
+O => S.IN1
+O => C_out.IN1
+O => C_out.IN1
+O => C_out.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sumadorRestador|sumadorRestador1Bit:bit2
+A => S.IN1
+A => S.IN0
+A => C_out.IN0
+A => C_out.IN0
+A => C_out.IN0
+A => C_out.IN0
+B => S.IN0
+B => C_out.IN1
+B => C_out.IN1
+B => C_out.IN0
+B => C_out.IN1
+B => S.IN1
+C_in => S.IN1
+C_in => C_out.IN1
+C_in => C_out.IN1
+C_in => C_out.IN1
+C_in => C_out.IN1
+O => S.IN1
+O => C_out.IN1
+O => C_out.IN1
+O => C_out.IN1
+C_out <= C_out.DB_MAX_OUTPUT_PORT_TYPE
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+

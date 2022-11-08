@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dC:/intelFPGA_lite/20.1/proyects/Laboratorios/Lab 1/Ejercicio_Multiplexor/simulation/modelsim
 Emultiplexor
-Z1 w1662060759
+Z1 w1665182349
 Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
@@ -25,9 +25,9 @@ VQzfoF2_WbGO_?`VU7?YI=1
 !s100 zROh_jVE<2mWn8SD02M6K0
 Z8 OV;C;2020.1;71
 31
-Z9 !s110 1662060801
+Z9 !s110 1665182375
 !i10b 1
-Z10 !s108 1662060801.000000
+Z10 !s108 1665182375.000000
 Z11 !s90 -reportprogress|300|-93|-work|work|C:/intelFPGA_lite/20.1/proyects/Laboratorios/Lab 1/Ejercicio_Multiplexor/Multiplexor.vhd|
 !s107 C:/intelFPGA_lite/20.1/proyects/Laboratorios/Lab 1/Ejercicio_Multiplexor/Multiplexor.vhd|
 !i113 1
@@ -42,8 +42,8 @@ DEx4 work 11 multiplexor 0 22 QzfoF2_WbGO_?`VU7?YI=1
 !i122 0
 l40
 L30 30
-VSS2Q`23SWE2TWi?KFDH7]3
-!s100 A8W7AJ_MP>1Pi_hY[N?^N2
+V[e8>FL7ZiSG_ZA6g3kZ;93
+!s100 ;jfcV8A>@CC?>Xf@?:h2T1
 R8
 31
 R9

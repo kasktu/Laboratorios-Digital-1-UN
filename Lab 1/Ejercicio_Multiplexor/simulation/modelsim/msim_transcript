@@ -12,7 +12,7 @@
 # 
 # vcom -93 -work work {C:/intelFPGA_lite/20.1/proyects/Laboratorios/Lab 1/Ejercicio_Multiplexor/Multiplexor.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 14:33:21 on Sep 01,2022
+# Start time: 17:39:35 on Oct 07,2022
 # vcom -reportprogress 300 -93 -work work C:/intelFPGA_lite/20.1/proyects/Laboratorios/Lab 1/Ejercicio_Multiplexor/Multiplexor.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -21,63 +21,43 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity multiplexor
 # -- Compiling architecture selecion of multiplexor
-# End time: 14:33:21 on Sep 01,2022, Elapsed time: 0:00:00
+# End time: 17:39:35 on Oct 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.multiplexor
 # vsim work.multiplexor 
-# Start time: 14:33:27 on Sep 01,2022
+# Start time: 17:39:51 on Oct 07,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
 # Loading work.multiplexor(selecion)
-vsim work.multiplexor
-# End time: 14:33:42 on Sep 01,2022, Elapsed time: 0:00:15
-# Errors: 0, Warnings: 0
-# vsim work.multiplexor 
-# Start time: 14:33:42 on Sep 01,2022
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.multiplexor(selecion)
-add wave -position insertpoint  \
-sim:/multiplexor/S
-add wave -position insertpoint  \
-sim:/multiplexor/D
-# Load canceled
-add wave -position insertpoint  \
-sim:/multiplexor/Y
-add dataflow  \
-sim:/multiplexor/S
-# WARNING: No extended dataflow license exists
-# No drivers or ports for S
-add list  \
-sim:/multiplexor/S
-add list  \
-sim:/multiplexor/S
-add log  \
-sim:/multiplexor/S
-add watch  \
-sim:/multiplexor/S
-add dataflow  \
-sim:/multiplexor/S
-# WARNING: No extended dataflow license exists
-# No drivers or ports for S
-toggle add  \
-sim:/multiplexor/S
-# ** UI-Msg: (vsim-43) toggle coverage is not supported in this version.
+add wave -position end  sim:/multiplexor/Y
+wave create -driver freeze -pattern counter -startvalue 00 -endvalue 11 -type Range -direction Up -period 50ps -step 1 -repeat forever -range 1 0 -starttime 0ps -endtime 1000ps sim:/multiplexor/S
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+add wave -position 0 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/multiplexor/S
+run
+run
+run
+run
+wave create -driver freeze -pattern constant -value UTFQ -range 3 0 -starttime 0ps -endtime 1000ps sim:/multiplexor/D
+# ** UI-Msg: (vish-4026) Value "'t'" does not represent a literal of the enumeration type.
+#Invalid value to -value switch: UTFQ
+# Usage: wave create -driver <freeze|deposit|drive|expectedOutput> -pattern constant -value <value> [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+wave create -driver freeze -pattern counter -startvalue 0000 -endvalue 1111 -type Range -direction Up -period 200ps -step 1 -repeat forever -range 3 0 -starttime 0ps -endtime 1000ps sim:/multiplexor/D
+add wave -position 0 -autoscale 1 -format Literal -height 17 -editable 2 Edit:/multiplexor/D
+restart
+run
+# GetModuleFileName: No se puede encontrar el módulo especificado.
 # 
-add dataflow  \
-sim:/multiplexor/S
-# WARNING: No extended dataflow license exists
-# No drivers or ports for S
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-sim:/multiplexor/S
-# End time: 14:43:03 on Sep 01,2022, Elapsed time: 0:09:21
+# 
+run
+run
+run
+run
+run
+run
+run
+# End time: 17:47:30 on Oct 07,2022, Elapsed time: 0:07:39
 # Errors: 0, Warnings: 0

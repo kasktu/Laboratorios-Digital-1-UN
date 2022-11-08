@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity Contador60Seg is
+    port (
+        
+    );
+end entity Contador60Seg;
+
+architecture Count of Contador60Seg is
+    
+begin
+    
+    
+    
+end architecture Count;
